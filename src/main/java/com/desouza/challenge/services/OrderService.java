@@ -9,7 +9,7 @@ import com.desouza.challenge.entities.Order;
 public class OrderService {
 
     @Autowired
-    ShippingService shippingService;
+    private ShippingService shippingService;
 
     public Double total(Order order) {
         Double discountValue = (order.getBasic() * (order.getDiscount() / 100));
